@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <body>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="class=login-wrap">
+    <title>Condiments & Spices | Login/SignUp</title>
+    <style>
+      body{
+margin:0;
+color:#6a6f8c;
+background:#c8c8c8;
+font:600 16px/18px 'Open Sans',sans-serif;
+}
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.login-wrap{
+width:100%;
+margin:auto;
+max-width:525px;
+min-height:670px;
+position:relative;
+background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;
+box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.login-html{
+width:100%;
+height:100%;
+position:absolute;
+padding:90px 70px 50px 70px;
+
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+top:0;
+left:0;
+right:0;
+bottom:0;
+position:absolute;
+transform:rotateY(180deg);
+backface-visibility:hidden;
+transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+text-transform:uppercase;
+}
+.login-html .tab{
+font-size:22px;
+margin-right:15px;
+padding-bottom:5px;
+margin:0 15px 10px 0;
+display:inline-block;
+border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+color:#fff;
+}
+.login-form{
+min-height:345px;
+position:relative;
+perspective:1000px;
+transform-style:preserve-3d;
+}
+.login-form .group{
+margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+width:100%;
+color:#fff;
+display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+border:none;
+padding:15px 20px;
+border-radius:25px;
+background:rgba(255,255,255,.1);
+}
+.login-form .group input[data-type="password"]
+{
+/* text-security:circle; */
+-webkit-text-security:circle;
+}
+.login-form .group .label{
+color:#aaa;
+font-size:12px;
+}
+/* .login-form .group .button{
+
+} */
+.login-form .group label .icon{
+width:15px;
+height:15px;
+border-radius:2px;
+position:relative;
+display:inline-block;
+background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+content:'';
+width:10px;
+height:2px;
+background:#fff;
+position:absolute;
+transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+left:3px;
+width:5px;
+bottom:6px;
+transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+top:6px;
+right:0;
+transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+color:#fff;
+}
+
+
+.login-form .group .check:checked + label .icon:before{
+transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+transform:rotate(0);
+}
+
+.hr{
+height:2px;
+margin:60px 0 50px 0;
+background:rgba(255,255,255,.2); 
+}
+.foot-lnk{
+text-align:center;
+}
+body{
+  background:url(lbgg.jpg) no-repeat;
+  background-size: cover;
+
+  }
+  .header {
+overflow: hidden;
+background-image: url(bg2.jpg);
+background-image: no-repeat;
+      background-size: cover;
+padding: 20px 10px;
+}
+
+.header a {
+float: left;
+color: black;
+text-align: center;
+padding: 12px;
+text-decoration: none;
+font-size: 18px; 
+line-height: 25px;
+border-radius: 4px;
+}
+
+.header a.logo {
+font-size: 25px;
+font-weight: bold;
+}
+
+.header a:hover {
+background-color: #ddd;
+color: black;
+}
+
+.header a.active {
+background-color: dodgerblue;
+color: white;
+}
+
+.header-right {
+float: right;
+}
+
+#logo {
+
+height: 120px;
+width: 120px;
+border-radius: 15px;
+}
+
+h2{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-top: 45px;
+}
+.site-footer
+{
+background-color:#26272b;
+padding:45px 0 20px;
+font-size:15px;
+line-height:24px;
+color:#737373;
+}
+.site-footer hr
+{
+border-top-color:#bbb;
+opacity:0.5
+}
+.site-footer hr.small
+{
+margin:20px 0
+}
+.site-footer h6
+{
+color:#fff;
+font-size:16px;
+text-transform:uppercase;
+margin-top:5px;
+letter-spacing:2px
+}
+.site-footer a
+{
+color:#737373;
+}
+.site-footer a:hover
+{
+color:#3366cc;
+text-decoration:none;
+}
+.footer-links
+{
+margin-top: 7px;
+margin-left: 10px;
+
+}
+
+.footer-links li
+{
+display:block
+}
+.footer-links a
+{
+color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+color:#3366cc;
+text-decoration:none;
+}
+
+@media (max-width:991px)
+{
+.site-footer [class^=col-]
+{
+  margin-bottom:30px
+}
+}
+@media (max-width:767px)
+{
+.site-footer
+{
+  padding-bottom:0
+}
+
+}
+.footer-links a{
+text-decoration: none;
+}
+body{
+background-color: rgba(0, 0, 0, 0.3);
+}
+.log {
+color: chartreuse;
+background-color: black;
+height: 400px;
+width: 300px;
+margin-bottom: 50px ; 
+margin-top: 50px ;
+border-style: solid ;
+border-radius: 20px;
+border-color: blueviolet;
+text-align: center;
+padding-top: 100px;
+margin-left: 650px;
+}
+.btn button{
+border-color: rgb(179, 255, 0);
+height: 50px;
+width: 100px;
+border-style: solid;
+border-radius: 30px;
+margin-top: 150px;
+}
+.btn a{
+text-decoration: none;	
+color: black;
+}
+.text-uppercase{
+margin-left: 40px;
+}
+.align{
+  margin-top: 50px;
+}
+  </style>
+</head>
+        <div class="login-html">
+            <div class="header">
+                <a href="#default" class="logo"><img id="logo" src="logo1 (1).jpg"></a>
+               <h2>STAR BRAND</h2>
+            
+                <div class="header-right">
+                  <a  href="mainpage.html">Home</a>
+                  <a  href="product.html">Products</a>
+                  <!-- <a  href="map.html">Contact</a> -->
+                  <a href="about.html">About</a>
+                  <a  href="scgallery.html">Show Case Gallery</a>
+                  <!-- <a class="active" href="faq.html">FAQ</a> -->
+                  <a class="active" href="login1.html">Log In</a>
+                </div>
+              </div>
+              <div class="align">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+            <div class="login-form">
+                <div class="sign-in-htm">
+                    <div class="group">
+                        <label for="user" class="label">Username</label>
+                        <input id="user" type="text" class="input" required="true">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Password</label>
+                        <input id="pass" type="password" class="input" required="true" data-type="password">
+                    </div>
+                    <!-- <div class="group">
+                        <input id="check" type="checkbox" class="check"  >
+                        <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                    </div> -->
+                    <div class="group">
+                        <input type="submit" class="button" value="Sign In" onclick="validateLogin()">
+                    </div>
+                    <div class="hr"></div>
+                    <!-- <div class="foot-lnk">
+                        <a href="#forgot">Forgot Password?</a>
+                    </div> -->
+                </div>
+                <div class="align">
+                <div class="sign-up-htm">
+                    <div class="group">
+                        <label for="username" class="label">Username</label>
+                        <input id="username" type="text" class="input" required>
+                    </div>
+                   
+                    <div class="group">
+                        <label for="emailAddress" class="label">Email Address</label>
+                        <input id="emailAddress" type="text" class="input" required>
+                    </div>
+                    <div class="group">
+                      <label for="pwd" class="label">Password</label>
+                      <input id="pwd" type="password" class="input" required data-type="password">
+                  </div>
+                  <div class="group">
+                      <label for="repeatPass" class="label">Repeat Password</label>
+                      <input id="repeatPass" type="password" class="input" required data-type="password">
+                  </div>
+                    <div class="group">
+                        <input type="submit" class="button" value="Sign Up" onclick="validateSignUp()" required>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                       <a href="login1.html"> <label for="tab-1">Already a Member? </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <script>
+    
+    function validateSignUp(){
+    var username = document.getElementById("username").value
+    var pwd = document.getElementById("pwd").value
+    var repeatPass = document.getElementById("repeatPass").value
+    var emaill = document.getElementById("emailAddress").value
+
+    if(username =="" && pwd =="" && repeatPass == "" && emaill ==""){
+      alert('All fields are required!')
+    }
+    else if(username ==""){
+      alert("Username is required!")
+    }
+    else if(emaill ==""){
+      alert('Email is required!')
+    }
+    else if(pwd ==""){
+      alert("Password is required!")
+    }
+    else if(repeatPass ==""){
+      alert("Repeat Password is required!")
+    }
+    else if( username !="" && emaill != "" && pwd !="" && repeatPass != "" ){
+      alert("You have been registered successfully!")
+    }
+    
+    }
+    
+    function validateLogin(){
+    var email = document.getElementById("user").value
+    var pass = document.getElementById("pass").value
+    
+    if(email =="" && pass == ""){
+      alert('All fields are required!')
+    }
+    else if(email ==""){
+      alert('Email is required!')
+    }
+    else if(pass ==""){
+      alert("Password is required!")
+    }
+    else if(email !="" && pass != ""){
+      alert("Login Successfull!")
+    }
+    
+    }
+    
+    
+    </script>
+    
+
+    
+</body>
+
+</html>

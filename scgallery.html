@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Case Gallery</title>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        /* h1{
+            background-color: black;
+            width: 100%;
+            font-style: oblique;
+            color: chartreuse;
+            text-align: center;
+            padding: 4%;
+            height: 200px;   
+        } */
+        .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0,0.2);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#masala{
+  margin-top: 40px;
+}
+.image{
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-radius: 10%;
+}
+footer{
+    background-color: gray;
+    position: absolute;
+    bottom: 10;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+    .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+body{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.header {
+  overflow: hidden;
+  background-image: url(bg2.jpg);
+  background-image: no-repeat;
+        background-size: cover;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+#logo{
+
+  height: 120px;
+  width: 120px;
+  border-radius: 15px;
+}
+
+h2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 45px;
+}
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  margin-top: 7px;
+  margin-left: 110px;
+  /* list-style:none */
+}
+
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+
+}
+.footer-links a{
+  text-decoration: none;
+}
+body{
+    background-image: url(lbgg.jpg);
+        background-image: no-repeat;
+        background-size: cover;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+    </style>
+</head>
+<body>
+  <div class="header">
+    <a href="#default" class="logo"><img id="logo" src="logo1 (1).jpg"></a>
+   <h2>STAR BRAND</h2>
+
+    <div class="header-right">
+      <a  href="mainpage.html">Home</a>
+      <a  href="product.html">Products</a>
+      <!-- <a href="map.html">Contact</a> -->
+      <a href="about.html">About</a>
+      <a class="active" href="scgallery.html">Show Case Gallery</a>
+      <!-- <a href="faq.html">FAQ</a> -->
+      <a href="login1.html">Log In</a>
+    </div>
+  </div>
+    <!-- <img src="logo1.jpg" style="height: 200px;" width="200px" align="left"><h1>Star Brand</h1> -->
+    <!-- <h1 style="height: auto;"> Show Case Gallery</h1> -->
+    <div id="masala">
+        <div class="container">
+            <img src="sc1 (2).jpg" alt="Avatar" class="image">
+            <div class="overlay">
+              <div class="text"><h2> HALDI</h2> This is one of the most popular types of spices, and no Indian cooking is complete without it! Haldi, in its natural form, is a solid bright yellow wood-like element. These can be ground to make Haldi powder, which is easier to use and is put to dishes for a beautiful color and taste. You can also use it for many healthy and immunity boosting drinks.
+
+                English Name: Turmeric</div>
+            </div>
+          </div>
+          <div id="masala">
+            <div class="container">
+                <img src="sc2 (1).jpg" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text"><h2> RED CHILLI/PEPPER</h2> Laal Mirch, also known as Kashmiri Laal mirch, is a must in every kitchen and tops the common name on spices list. It is used to make a dish more spicy, flavorful, and also for a gorgeous red hue. It acts like a natural food color and makes the dish more presentable. The only thing to note here is that one should add Laal mirch into their recipes according to their spice tolerance.
+
+                    English Name: Red Chilli/Pepper</div>
+                </div>
+              </div>
+              <div id="masala">
+                <div class="container">
+                    <img src="sc3 (1).jpg" alt="Avatar" class="image">
+                    <div class="overlay">
+                      <div class="text"><h2> ELAICHI</h2> Elaichi is an aromatic and flavorful spice that comes wrapped in a pod. It is typically used to make desserts and curries, but many people love the flavor of elaichi in their pulao. It is suggested to throw the outer pod and use what is inside in powder form. 
+
+                        English Name: Cardamom </div>
+                    </div>
+                  </div>
+                  <div id="masala">
+                    <div class="container">
+                        <img src="sc4 (1).jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                          <div class="text"><h2> AJWAIN</h2>Ajwain looks similar to cumin seeds, but it has a powerful fragrance. It also smells like a herb and somewhat tastes like a mix of oregano and anise.
+
+                            English Name: Carom Seeds</div>
+                        </div>
+                      </div>
+                      <div id="masala">
+                        <div class="container">
+                            <img src="sc5 (1).jpg" alt="Avatar" class="image">
+                            <div class="overlay">
+                              <div class="text"><h2> DAALCHINI</h2> Dalchini has a slightly sweet flavor and is similar to the taste of cinnamon. It is used in many traditional recipes and many drinks like hot chocolate and coffee for a pinch of spice. It adds a unique intensity to the drink and makes it more enjoyable.
+
+                                English Name: Cinnamon</div>
+                            </div>
+                          </div>
+                          <div id="masala">
+                            <div class="container">
+                                <img src="sc6 (1).jpg" alt="Avatar" class="image">
+                                <div class="overlay">
+                                  <div class="text"><h2> BLACK CUMIN</h2> Kalonji belongs to the buttercup family and is black in color. It has a high amount of antioxidants and is used in making many north Indian dishes. They are a flavorful spice and are used in many cuisines worldwide.
+
+                                    English Name: Black Cumin</div>
+                                </div>
+                              </div>
+                              <div id="masala">
+                                <div class="container">
+                                    <img src="sc7 (1).jpg" alt="Avatar" class="image">
+                                    <div class="overlay">
+                                      <div class="text"><h2> GARAM MASALA</h2>Garam masala mixes different types of masala and to make a powdered form and is used in dishes like biryani, pulao, and vegetable curries. It gives a rich and authentic flavor to the dish, and many people add their favorite spices in the natural form to make a blend. 
+
+                                        English Name: Garam Masala</div>
+                                    </div>
+                                  </div>
+                                  <div id="masala">
+                                    <div class="container">
+                                        <img src="sc8 (2).jpg" alt="Avatar" class="image">
+                                        <div class="overlay">
+                                          <div class="text"><h2> ZEERA</h2>Zeera has an earthy and warm flavor and is used in almost every Pakistani cooking. It can be added to the dish both as seeds and as ground zeera powder. Zeera is typically added to lentils and vegetable dishes to have a punch of nutty flavor. 
+
+                                            English Name: Cumin</div>
+                                        </div>
+                                      </div>
+                                      <div id="masala">
+                                        <div class="container">
+                                            <img src="sc10 (1).jpg" alt="Avatar" class="image" style="margin-bottom: 100px;">
+                                            <div class="overlay">
+                                              <div class="text"><h2> CHAAT MASALA</h2> Taste and flavour enhancer for various savoury street food style Pakistani dishes and snacks.</div>
+                                            </div>
+                                          </div>
+                                          <footer class="site-footer">
+                                            <div class="container">
+                                              <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                  <h6>About</h6>
+                                                  <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, quisquam minus quo quam laborum recusandae incidunt eligendi in, numquam doloribus sunt. Debitis necessitatibus labore aut iure perferendis dicta pariatur suscipit.</p>
+                                                </div>
+                                      
+                                                <div class="col-xs-6 col-md-3">
+                                                  
+                                                  <ul class="footer-links">
+                                                    <h6>Quick Links</h6>
+                                                    <li><a href="about.html">About Us</a></li>
+                                                    <li><a href="map.html">Contact Us</a></li>
+                                                    <li><a href="product.html">Products</a></li>
+                                                    <li><a href="scgallery.html">Gallery</a></li>
+                                                    <li><a href="map.html">Sitemap</a></li>
+                                                  </ul>
+                                                </div>
+                                          
+                                              </div>
+                                              <hr>
+                                            </div>
+                                              </div>
+                                            </div>
+                                      </footer>
+                                    
+          </body>
+          </html>
+          
+    </div>
+</body>
+
+</html>
